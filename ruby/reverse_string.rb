@@ -1,5 +1,9 @@
 def reverse_string(str)
-  # type your code in here
+  new_string_array = []
+  array = str.split("")
+  array.each { |l| new_string_array.unshift(l)}
+  return new_string_array.join
+
 end
 
 if __FILE__ == $PROGRAM_NAME
